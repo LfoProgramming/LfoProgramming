@@ -10,6 +10,6 @@ Ctrl + C = Compile
 
 Ctrl + R = Run
 
-Ctrl + =
+Ctrl + S = Save
 
 Shift + R = Compile and Run
