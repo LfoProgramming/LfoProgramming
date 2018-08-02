@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1533210990 source:c:\users\vlad\desktop\teme\temecpp\lfointerpretor\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<map>
+	<windows.h>
+	<string.h>
+	"Type.h"
+
+1533212305 source:c:\users\vlad\desktop\teme\temecpp\lfointerpretor\src\function.cpp
+	"Function.h"
+
+1533215515 c:\users\vlad\desktop\teme\temecpp\lfointerpretor\include\function.h
+	<map>
+	"Type.h"
+
+1533204836 source:c:\users\vlad\desktop\teme\temecpp\lfointerpretor\src\type.cpp
+	"Type.h"
+
+1533210928 c:\users\vlad\desktop\teme\temecpp\lfointerpretor\include\type.h
+	<string>
+
+1533210003 source:c:\users\vlad\desktop\teme\temecpp\lfointerpretor\src\int_type.cpp
+	"Int_type.h"
+
+1533210432 c:\users\vlad\desktop\teme\temecpp\lfointerpretor\include\int_type.h
+	"Type.h"
+	<memory>
+
