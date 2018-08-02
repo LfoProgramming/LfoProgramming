@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>Sounds/Want_To_Close.mp3</file>
+        <file>Sounds/Sure.mp3</file>
+        <file>Sounds/shut-your-mouth.mp3</file>
+        <file>Sounds/quiet.mp3</file>
+        <file>Sounds/Pus_Chosen.mp3</file>
+        <file>Sounds/intuition.mp3</file>
+        <file>Sounds/i-demand-attention.mp3</file>
+        <file>Sounds/gets-in-the-way.mp3</file>
+        <file>Sounds/digital-spit.mp3</file>
+        <file>Sounds/arrogant.mp3</file>
+        <file>Sounds/all-eyes-on-me.mp3</file>
+    </qresource>
+</RCC>
