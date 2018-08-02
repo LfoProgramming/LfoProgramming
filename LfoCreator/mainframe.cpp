@@ -17,6 +17,8 @@ MainFrame::MainFrame(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
+
     ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"https://.dx.am/\">Go! \>\><</a>");
     ui->SureClose->hide();
     ui->File->hide();
@@ -28,7 +30,35 @@ MainFrame::MainFrame(QWidget *parent) :
     ui->Help->hide();
     ui->Licence->hide();
     ui->Sites->hide();
+    ui->Demo->hide();
     ui->NewFile->hide();
+
+    ui->Site->setText("www.lfoprogramming.dx.am");
+    ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">Go! \>\><</a>");
+    ui->SitesLabel->setTextFormat(Qt::RichText);
+    ui->SitesLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    ui->SitesLabel->setOpenExternalLinks(true);
+
+    ui->App->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">App1 >></a>");
+    ui->App->setTextFormat(Qt::RichText);
+    ui->App->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    ui->App->setOpenExternalLinks(true);
+
+    ui->App_2->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">App2 >></a>");
+    ui->App_2->setTextFormat(Qt::RichText);
+    ui->App_2->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    ui->App_2->setOpenExternalLinks(true);
+
+    ui->App_3->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">App3 >></a>");
+    ui->App_3->setTextFormat(Qt::RichText);
+    ui->App_3->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    ui->App_3->setOpenExternalLinks(true);
+
+    ui->App_4->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">App4 >></a>");
+    ui->App_4->setTextFormat(Qt::RichText);
+    ui->App_4->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    ui->App_4->setOpenExternalLinks(true);
+
 
     ui->MasterSlider->setSliderPosition(99);
     on_SendButtons_clicked();
@@ -54,6 +84,7 @@ int isContributors=0;
 int isNotes=0;
 int isHelp=0;
 int isLicence=0;
+int isDemo=0;
 int isSites=0;
 
 int Volume=99;
@@ -247,15 +278,15 @@ void MainFrame::on_NotesCloseButton_clicked()
 void MainFrame::on_SitesCombo_currentIndexChanged(int index)
 {
     if (index==0){
-        ui->Site->setText("www.dx.am");
-        ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"https://.dx.am/\">Go! \>\><</a>");
+        ui->Site->setText("www.lfoprogramming.dx.am");
+        ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">Go! \>\><</a>");
         ui->SitesLabel->setTextFormat(Qt::RichText);
         ui->SitesLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
         ui->SitesLabel->setOpenExternalLinks(true);
     }
     if(index==1){
-        ui->Site->setText("www.github.com");
-        ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"https://.github.com/\">Go! \>\><</a>");
+        ui->Site->setText("https://github.com/LfoProgramming");
+        ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"http://www.github.com/LfoProgramming/\">Go! \>\><</a>");
         ui->SitesLabel->setTextFormat(Qt::RichText);
         ui->SitesLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
         ui->SitesLabel->setOpenExternalLinks(true);
@@ -456,6 +487,21 @@ void MainFrame::on_SendButtons_clicked()
         ui->SendButtons->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->DefaultThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainNotesSave->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainNewFileCancel->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainSaveNewFile->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->DemoDone->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->SureCloseCancelButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainSave->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainCompile->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainRun->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainCompileAndRun->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->SureCloseOkButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+
     }
     else {
         ui->SendBg->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
@@ -467,6 +513,16 @@ void MainFrame::on_SendButtons_clicked()
         ui->SendButtons->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->DefaultThemeButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->NightThemeButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainNotesSave->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainNewFileCancel->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainSaveNewFile->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->DemoDone->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->SureCloseCancelButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainSave->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainCompile->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainRun->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainCompileAndRun->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->SureCloseOkButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
     }
 }
 
@@ -567,6 +623,21 @@ void MainFrame::on_DefaultThemeButton_clicked()
     ui->SendButtons->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->DefaultThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainNotesSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainNewFileCancel->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainSaveNewFile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->DemoDone->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->SureCloseCancelButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainCompile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainCompileAndRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->SureCloseOkButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+
 }
 
 void MainFrame::on_NightThemeButton_clicked()
@@ -611,6 +682,20 @@ void MainFrame::on_NightThemeButton_clicked()
     ui->SendButtons->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->DefaultThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainNotesSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainNewFileCancel->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainSaveNewFile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->DemoDone->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->SureCloseCancelButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainCompile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainCompileAndRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->SureCloseOkButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->NightThemeButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
 }
 
 void MainFrame::on_fontComboBox_currentFontChanged(const QFont &f)
@@ -642,9 +727,11 @@ int isNewFile=0;
 
 std::ofstream InFile;
 
-///std::string InFileName;
+std::string InFileNameString;
 
 QString InFileName;
+
+
 
 
 void MainFrame::on_MainNewFile_clicked()
@@ -674,6 +761,12 @@ void MainFrame::on_MainSaveNewFile_2_clicked()
 void MainFrame::on_MainSaveNewFile_clicked()
 {
     InFileName=ui->NewFileLineEdit->text();
+    InFileNameString = InFileName.toUtf8().constData();
+    if (InFile.is_open()){
+        InFile.close();
+    }
+    InFile.open(InFileNameString);
+    on_MainNewFileCancel_clicked();
 }
 
 void MainFrame::on_MuteButton_clicked()
@@ -689,7 +782,18 @@ void MainFrame::on_MainSave_clicked()
     Sp->setVolume(Volume);
     Sp->play();
 
-
+ ///   ui->InText->
+ ///
+    QFile data(ui->MainLineNameIn->text()+".lfop");
+    if (data.open(QFile::WriteOnly | QFile::Truncate)) {
+        QTextStream out(&data);
+         QTextStream stream(&data);
+        stream << ui->InText->toPlainText();
+                    data.flush();
+                    data.close();
+        out << "Result: " << qSetFieldWidth(10) << left << 3.14 << 2.7;
+        // writes "Result: 3.14      2.7       "
+    }
 
 }
 
@@ -718,4 +822,56 @@ void MainFrame::on_MainCompileAndRun_clicked()
     Sp->setVolume(Volume);
     Sp->play();
 
+}
+
+void MainFrame::on_MainNotesSave_clicked()
+{
+    QMediaPlayer * Sp = new QMediaPlayer();
+    Sp->setMedia(QUrl("qrc:/sounds/Sounds/Sure.mp3"));
+    Sp->setVolume(Volume);
+    Sp->play();
+
+}
+
+void MainFrame::on_DemoButton_clicked()
+{
+    on_HiddenClearButton_clicked();
+    if (isDemo==0){
+        ui->Demo->show();
+        isDemo=1;
+    }
+    else {
+        ui->Demo->hide();
+        isDemo=0;
+    }
+}
+
+void MainFrame::on_DemoDone_clicked()
+{
+    ui->Demo->hide();
+    isDemo=0;
+}
+
+void MainFrame::on_DemoClose_clicked()
+{
+    on_DemoDone_clicked();
+}
+
+void MainFrame::on_MainLoadFile_clicked()
+{
+    on_HiddenClearButton_clicked();
+///    InFileName=ui->NewFileLineEdit->text();
+///    InFileNameString = InFileName.toUtf8().constData();
+    if (InFile.is_open()){
+        InFile.close();
+    }
+    InFile.open("In.");
+    on_MainNewFileCancel_clicked();
+
+}
+
+void MainFrame::on_MainNewFileCancel_clicked()
+{
+    ui->NewFile->hide();
+    isNewFile=0;
 }

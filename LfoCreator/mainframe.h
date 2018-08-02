@@ -10,6 +10,7 @@
 #include <QDir>
 #include <iostream>
 #include <QTimer>
+#include <QTextStream>
 #include <QElapsedTimer>
 //#include <AnalogClock>
 #include <QAudioRecorder>
@@ -132,6 +133,18 @@ private slots:
     void on_MainRun_clicked();
 
     void on_MainCompileAndRun_clicked();
+
+    void on_MainNotesSave_clicked();
+
+    void on_DemoButton_clicked();
+
+    void on_DemoDone_clicked();
+
+    void on_DemoClose_clicked();
+
+    void on_MainLoadFile_clicked();
+
+    void on_MainNewFileCancel_clicked();
 
 private:
     Ui::MainFrame *ui;

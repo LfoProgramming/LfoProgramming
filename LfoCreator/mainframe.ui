@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Lfo Creator</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/pictures/Lfo_Ico_1_4_7.png</normaloff>:/pictures/Lfo_Ico_1_4_7.png</iconset>
+  </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
   </property>
@@ -68,9 +72,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>378</x>
+      <x>373</x>
       <y>-1</y>
-      <width>77</width>
+      <width>79</width>
       <height>28</height>
      </rect>
     </property>
@@ -154,7 +158,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
     <property name="geometry">
      <rect>
       <x>761</x>
-      <y>2</y>
+      <y>-30</y>
       <width>24</width>
       <height>24</height>
      </rect>
@@ -184,7 +188,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
       <x>12</x>
       <y>32</y>
       <width>88</width>
-      <height>124</height>
+      <height>92</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -200,7 +204,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <property name="geometry">
       <rect>
        <x>2</x>
-       <y>93</y>
+       <y>61</y>
        <width>84</width>
        <height>28</height>
       </rect>
@@ -216,7 +220,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <property name="geometry">
       <rect>
        <x>3</x>
-       <y>63</y>
+       <y>31</y>
        <width>84</width>
        <height>28</height>
       </rect>
@@ -226,6 +230,22 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      </property>
      <property name="text">
       <string>New File</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MainLoadFile">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>2</y>
+       <width>84</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Load Files</string>
      </property>
     </widget>
    </widget>
@@ -368,7 +388,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
       <x>70</x>
       <y>32</y>
       <width>88</width>
-      <height>124</height>
+      <height>33</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -552,7 +572,7 @@ color: rgb(255, 255, 255);</string>
      <attribute name="title">
       <string>Main</string>
      </attribute>
-     <widget class="QPlainTextEdit" name="InText">
+     <widget class="QTextEdit" name="InText">
       <property name="geometry">
        <rect>
         <x>4</x>
@@ -566,9 +586,12 @@ color: rgb(255, 255, 255);</string>
 color: rgb(0, 0, 0);
 font: 63 11pt &quot;FreeSans&quot;;</string>
       </property>
-      <property name="plainText">
-       <string>// Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.
-//</string>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'FreeSans'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;// Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_15">
@@ -683,7 +706,13 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+      </property>
+      <property name="text">
+       <string>InFile</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="MainLineNameOut">
@@ -696,7 +725,13 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OutFile</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_17">
@@ -717,12 +752,12 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
        <string>.lfop</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="OutText">
+     <widget class="QTextEdit" name="OutText">
       <property name="geometry">
        <rect>
         <x>412</x>
         <y>35</y>
-        <width>396</width>
+        <width>392</width>
         <height>366</height>
        </rect>
       </property>
@@ -731,9 +766,153 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
 color: rgb(0, 0, 0);
 font: 63 11pt &quot;FreeSans&quot;;</string>
       </property>
-      <property name="plainText">
-       <string>// This will load your output file</string>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'FreeSans'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;// Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
+     </widget>
+     <widget class="QFrame" name="Demo">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>170</y>
+        <width>133</width>
+        <height>182</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(92, 53, 102);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="DemoClose">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>4</y>
+         <width>17</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>17</width>
+         <height>17</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>17</width>
+         <height>17</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>UpArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(239, 41, 41);
+color: rgb(0, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>✕</string>
+       </property>
+       <property name="shortcut">
+        <string>Esc</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>46</x>
+         <y>-1</y>
+         <width>39</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(162, 162, 162, 0);
+color: rgb(255, 255, 255);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Demo</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>36</y>
+         <width>118</width>
+         <height>109</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="plainText">
+        <string>This is the Lfo Demo.
+
+Go to File &gt; LoadFiles to load startup files. You have an in and an out file shown. Go to Help for more.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_13">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>25</y>
+         <width>167</width>
+         <height>6</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>6</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>6</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.228856 rgba(162, 162, 162, 0), stop:0.60199 rgba(61, 185, 185, 255), stop:0.79602 rgba(138, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DemoDone">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>150</y>
+         <width>74</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Done</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
@@ -832,6 +1011,24 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Url: https://docs.python.org/3/c-api/memory.html&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>5</y>
+        <width>45</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/Lfo_Ico_1_4_7.png);
+background-color: rgba(162, 162, 162, 0);
+image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
@@ -1290,15 +1487,238 @@ color: rgb(0, 0, 0);</string>
 color: rgb(0, 0, 0);</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>181</x>
+        <y>4</y>
+        <width>138</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(162, 162, 162, 0);
+color: rgb(0, 0, 0);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hello Programmer!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>469</x>
+        <y>2</y>
+        <width>102</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(162, 162, 162, 0);
+color: rgb(0, 0, 0);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hello User!</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="ToDo">
+      <property name="geometry">
+       <rect>
+        <x>122</x>
+        <y>41</y>
+        <width>245</width>
+        <height>348</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>Lfo
+
+Lfo is a free open-source programming language aimed to make the programming language world better by implementing:
+-
+-
+
+Join Lfo at;
+
+https://github.com/LfoProgramming</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>406</x>
+        <y>42</y>
+        <width>196</width>
+        <height>75</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>There are a few applications that show the use of Lfo. Thank you!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="App">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>140</y>
+        <width>190</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>App1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="App_2">
+      <property name="geometry">
+       <rect>
+        <x>409</x>
+        <y>172</y>
+        <width>190</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>App2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="App_3">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>205</y>
+        <width>190</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>App3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="App_4">
+      <property name="geometry">
+       <rect>
+        <x>407</x>
+        <y>236</y>
+        <width>190</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>App4</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>273</y>
+        <width>196</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>Contribute to add to this list!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>308</y>
+        <width>203</width>
+        <height>87</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/Lfo_Ico_1_4_7.png);
+background-color: rgba(162, 162, 162, 0);
+image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>629</x>
+        <y>2</y>
+        <width>174</width>
+        <height>149</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>Lfo Release 1.0
+
+Edit and change the colors.
+
+Select a background image with the left panel.
+
+Send colors to elements.
+
+Select Font.
+
+Select the Default or the Night Theme. </string>
+      </property>
+      <property name="overwriteMode">
+       <bool>false</bool>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QFrame" name="Notes">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>290</y>
+      <y>257</y>
       <width>182</width>
-      <height>140</height>
+      <height>173</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1407,6 +1827,22 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MainNotesSave">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>74</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
      </property>
     </widget>
    </widget>
@@ -1532,11 +1968,22 @@ background-color: rgb(255, 255, 255);</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Help&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Welcome to  LFO!&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(also found in Help.txt)&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. Getting started&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Files have in &amp;lt;&amp;gt; and have the &amp;quot; .lfop &amp;quot; extension. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Files in LFO Creator have the &amp;quot; .lfop &amp;quot; extension. &lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + H = Help&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + C = Compile&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + R = Run&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + S = Save&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Shift + R = Compile and Run&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -1673,6 +2120,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Also Licenced under Creative Commons Affiliation-ShareAlike Licence. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
+    <zorder>LicenceClose</zorder>
+    <zorder>label_8</zorder>
+    <zorder>line_8</zorder>
+    <zorder>textEdit_2</zorder>
+    <zorder>tabWidget</zorder>
    </widget>
    <widget class="QFrame" name="Sites">
     <property name="geometry">
@@ -1788,7 +2240,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
 background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>www.dx.am</string>
+      <string>www.lfoprogramming.dx.am</string>
      </property>
      <property name="readOnly">
       <bool>true</bool>
@@ -1926,7 +2378,8 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(208, 227, 255);</string>
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
      </property>
      <property name="plainText">
       <string>Release: 1.0</string>
@@ -1969,9 +2422,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>260</y>
+      <y>290</y>
       <width>129</width>
-      <height>99</height>
+      <height>73</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -2036,22 +2489,6 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
       <string>Contributors</string>
      </property>
     </widget>
-    <widget class="QPlainTextEdit" name="plainTextEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>13</x>
-       <y>39</y>
-       <width>104</width>
-       <height>50</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(208, 227, 255);</string>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="Line" name="line_4">
      <property name="geometry">
       <rect>
@@ -2080,6 +2517,30 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>40</y>
+       <width>103</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>SIngle Coil: singlecoilcontact@protonmail.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vlad Alex Luta: vladalex420@gmail.com</string>
+      </property>
+     </item>
     </widget>
    </widget>
    <widget class="QFrame" name="horizontalFrame">
@@ -2286,11 +2747,14 @@ color: rgb(0, 0, 0);</string>
        <height>28</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Save</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="MainSaveNewFile_2">
+    <widget class="QPushButton" name="MainNewFileCancel">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -2299,10 +2763,65 @@ color: rgb(0, 0, 0);</string>
        <height>28</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Cancel</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>440</y>
+      <width>437</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(162, 162, 162, 0);</string>
+    </property>
+    <property name="text">
+     <string>Licenced under the Apache Licence 2.0 and Creative Commons.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>751</x>
+      <y>-1</y>
+      <width>45</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/Lfo_Ico_1_4_7.png);
+background-color: rgba(162, 162, 162, 0);
+image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>433</y>
+      <width>45</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/Lfo_Ico_1_4_7.png);
+background-color: rgba(162, 162, 162, 0);
+image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
    <zorder>horizontalFrame</zorder>
    <zorder>line</zorder>
@@ -2324,10 +2843,15 @@ color: rgb(0, 0, 0);</string>
    <zorder>SureClose</zorder>
    <zorder>label_14</zorder>
    <zorder>NewFile</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_23</zorder>
+   <zorder>label_24</zorder>
    <zorder>tabWidget</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
