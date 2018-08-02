@@ -1,0 +1,10 @@
+lfoio Documentation
+
+$int @read 
+
+$void @print $int . . .
+
+$void @cls
+
+$void @pause
+
