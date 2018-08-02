@@ -2,7 +2,7 @@ Welcome to  LFO!
 
 1. Getting started
 
-Files have in LFO Creator and have the " .lfop " extension. 
+Files in LFO Creator have the " .lfop " extension. 
 
 Ctrl + H = Help
 
