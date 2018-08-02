@@ -31,7 +31,7 @@ For Documentation go to " Documentation.pdf " .
 Dev. Details:
 
 - The Rec. module is made by Qt: http://doc.qt.io/archives/qt-5.5/qtmultimedia-audiorecorder-example.html
-- Sounds found at: www.musicradar.com (Free)   
+- Sounds found at: https://notificationsounds.com/notification-sounds (Free)
 - Libraries: QFont, audiorecorder.h, ui_audiorecorder.h,  QApplication, QShortcut,  QtWidgets, QAudioProbe, QAudioRecorder, QDir, 
 QFileDialog and QMediaRecorder.
 
