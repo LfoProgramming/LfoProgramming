@@ -591,15 +591,18 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'FreeSans'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;// Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation. &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>143</x>
+        <x>133</x>
         <y>6</y>
-        <width>36</width>
+        <width>46</width>
         <height>20</height>
        </rect>
       </property>
@@ -615,7 +618,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <widget class="QPushButton" name="MainSave">
       <property name="geometry">
        <rect>
-        <x>195</x>
+        <x>175</x>
         <y>2</y>
         <width>83</width>
         <height>28</height>
@@ -633,10 +636,10 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
        <string>Ctrl+S</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="MainCompile">
+     <widget class="QPushButton" name="MainBuild">
       <property name="geometry">
        <rect>
-        <x>286</x>
+        <x>266</x>
         <y>2</y>
         <width>83</width>
         <height>28</height>
@@ -648,7 +651,7 @@ color: rgb(0, 0, 0);
 font: 63 11pt &quot;FreeSans&quot;;</string>
       </property>
       <property name="text">
-       <string>Compile</string>
+       <string>Build</string>
       </property>
       <property name="shortcut">
        <string>Ctrl+C</string>
@@ -657,7 +660,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <widget class="QPushButton" name="MainRun">
       <property name="geometry">
        <rect>
-        <x>377</x>
+        <x>357</x>
         <y>2</y>
         <width>83</width>
         <height>28</height>
@@ -678,8 +681,8 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <widget class="QPushButton" name="MainCompileAndRun">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>1</y>
+        <x>447</x>
+        <y>2</y>
         <width>165</width>
         <height>28</height>
        </rect>
@@ -718,7 +721,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <widget class="QLineEdit" name="MainLineNameOut">
       <property name="geometry">
        <rect>
-        <x>639</x>
+        <x>620</x>
         <y>1</y>
         <width>113</width>
         <height>28</height>
@@ -737,9 +740,9 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>745</x>
         <y>6</y>
-        <width>36</width>
+        <width>51</width>
         <height>20</height>
        </rect>
       </property>
@@ -771,7 +774,7 @@ font: 63 11pt &quot;FreeSans&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'FreeSans'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;// Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Welcome to Lfo Creator! For More, go to Help.txt or to the Documentation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QFrame" name="Demo">
@@ -2120,11 +2123,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Also Licenced under Creative Commons Affiliation-ShareAlike Licence. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <zorder>LicenceClose</zorder>
-    <zorder>label_8</zorder>
-    <zorder>line_8</zorder>
-    <zorder>textEdit_2</zorder>
-    <zorder>tabWidget</zorder>
    </widget>
    <widget class="QFrame" name="Sites">
     <property name="geometry">
@@ -2735,7 +2733,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgb
 color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
-      <string>File.lfop</string>
+      <string>FileName</string>
      </property>
     </widget>
     <widget class="QPushButton" name="MainSaveNewFile">
@@ -2824,6 +2822,7 @@ image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
     </property>
    </widget>
    <zorder>horizontalFrame</zorder>
+   <zorder>tabWidget</zorder>
    <zorder>line</zorder>
    <zorder>label</zorder>
    <zorder>DirectlyClose</zorder>
@@ -2846,7 +2845,6 @@ image: url(:/pictures/Lfo_Ico_1_4_7.png);</string>
    <zorder>label_18</zorder>
    <zorder>label_23</zorder>
    <zorder>label_24</zorder>
-   <zorder>tabWidget</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

@@ -146,6 +146,8 @@ private slots:
 
     void on_MainNewFileCancel_clicked();
 
+    void on_MainBuild_clicked();
+
 private:
     Ui::MainFrame *ui;
 };

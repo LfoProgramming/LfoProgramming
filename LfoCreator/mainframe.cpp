@@ -3,6 +3,7 @@
 #include "ui_mainframe.h"
 #include <fstream>
 #include <string.h>
+#include <string>
 ///#include "dockwidget.h"
 ///#include "dockwidget.ui"
 ///#include "dockwidget.cpp"
@@ -17,8 +18,6 @@ MainFrame::MainFrame(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
-
     ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"https://.dx.am/\">Go! \>\><</a>");
     ui->SureClose->hide();
     ui->File->hide();
@@ -32,6 +31,8 @@ MainFrame::MainFrame(QWidget *parent) :
     ui->Sites->hide();
     ui->Demo->hide();
     ui->NewFile->hide();
+
+
 
     ui->Site->setText("www.lfoprogramming.dx.am");
     ui->SitesLabel->setText("<a style=\"color:#534496;\" href=\"http://www.lfoprogramming.dx.am/\">Go! \>\><</a>");
@@ -493,7 +494,7 @@ void MainFrame::on_SendButtons_clicked()
         ui->DemoDone->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->SureCloseCancelButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->MainSave->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
-        ui->MainCompile->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
+        ui->MainBuild->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->MainRun->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->MainCompileAndRun->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
         ui->SureCloseOkButton->setStyleSheet(ColorString+"color: rgb(255, 255, 255);");
@@ -519,7 +520,7 @@ void MainFrame::on_SendButtons_clicked()
         ui->DemoDone->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->SureCloseCancelButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->MainSave->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
-        ui->MainCompile->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
+        ui->MainBuild->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->MainRun->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->MainCompileAndRun->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
         ui->SureCloseOkButton->setStyleSheet(ColorString+"color: rgb(0, 0, 0);");
@@ -629,7 +630,7 @@ void MainFrame::on_DefaultThemeButton_clicked()
     ui->DemoDone->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->SureCloseCancelButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
-    ui->MainCompile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainBuild->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainCompileAndRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->SureCloseOkButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
@@ -688,7 +689,7 @@ void MainFrame::on_NightThemeButton_clicked()
     ui->DemoDone->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->SureCloseCancelButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainSave->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
-    ui->MainCompile->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
+    ui->MainBuild->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->MainCompileAndRun->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
     ui->SureCloseOkButton->setStyleSheet("background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);");
@@ -766,6 +767,7 @@ void MainFrame::on_MainSaveNewFile_clicked()
         InFile.close();
     }
     InFile.open(InFileNameString);
+    ui->MainLineNameIn->setText(InFileName);
     on_MainNewFileCancel_clicked();
 }
 
@@ -860,18 +862,27 @@ void MainFrame::on_DemoClose_clicked()
 void MainFrame::on_MainLoadFile_clicked()
 {
     on_HiddenClearButton_clicked();
-///    InFileName=ui->NewFileLineEdit->text();
-///    InFileNameString = InFileName.toUtf8().constData();
-    if (InFile.is_open()){
-        InFile.close();
-    }
-    InFile.open("In.");
-    on_MainNewFileCancel_clicked();
-
+/////    InFileName=ui->NewFileLineEdit->text();
+/////    InFileNameString = InFileName.toUtf8().constData();
+///    if (InFile.is_open()){
+///        InFile.close();
+///    }
+///    InFile.open("In.");
+///    on_MainNewFileCancel_clicked();
+    ui->MainLineNameIn->setText("In");
+    InFileNameString="In";
+    ui->MainLineNameOut->setText("Out");
 }
 
 void MainFrame::on_MainNewFileCancel_clicked()
 {
     ui->NewFile->hide();
     isNewFile=0;
+}
+
+void MainFrame::on_MainBuild_clicked()
+{
+    std::string Str =  "./lfointerpretor";
+    Str=Str+InFileNameString;
+    system(Str.c_str());
 }
