@@ -1,0 +1,10 @@
+lfomath Documentation
+
+$int @sum $int . . .
+
+$int @minus $int . . .
+
+$int @multiply $int . . .
+
+$int @divide $int . . .
+
