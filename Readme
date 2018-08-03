@@ -2,27 +2,23 @@ Welcome to Lfo Programming!
 
 ------------------------------------|
 
-> Install Lfo Programming
+Execute in "Lfo" in Terminal:
 
-Install Deb:
+./lfocreator
 
-dpkg -i 
+When you compile (after you save), in the generated Terminal:
 
-(or with GDebi)
-
-Execute in any Terminal:
-
-
+./lfointerpretor < your file name >.lfop
 
 -------------------------------------|
 
-For Help go to " Help.txt " or to the Help panel in Lfo Programming.
+For Help go to " Help.txt " or to the Help panel in Lfo.
 
-For Q&A go to " Q&A.txt " (to ask a question, go to: Lfo Programmingcontact@protonmail.com ).
+For Q&A go to " Q&A.txt " (to ask a question, go to: lfoprogramming@protonmail.com ).
 
 For To Do go to " To_Do " .
 
-For About go to the About panel in Lfo Programming.
+For About go to the About panel in Lfo.
 
 For the Licence go to " Licence.txt " or to the Licence panel (found in Help).
 
@@ -30,16 +26,13 @@ For Documentation go to " Documentation.pdf " .
 
 Dev. Details:
 
-- The Rec. module is made by Qt: http://doc.qt.io/archives/qt-5.5/qtmultimedia-audiorecorder-example.html
-- Sounds found at: https://notificationsounds.com/notification-sounds (Free)
-- Libraries: QFont, audiorecorder.h, ui_audiorecorder.h,  QApplication, QShortcut,  QtWidgets, QAudioProbe, QAudioRecorder, QDir, 
-QFileDialog and QMediaRecorder.
-
 -------------------------------------|
 
 Thank you for checking out Lfo Programming!
 
-Contribute and share, it really helps making the Linux Launchpad a reality.
+Contribute and share, it really helps making Lfo Programming a great programming language.
+
+
 
 Site: http://lfoprogramming.dx.am/
 Mail: lfoprogramming@protonmail.com
@@ -57,9 +50,11 @@ Mail: singlecoilcontact@protonmail.com
 
 MATERIAL SUPLIMENTAR:
 
-Am Folosit:
-
-- 
+- DOCUMENTATIA: Documentation_RO.pdf este documentatia in limba romana, inclusa in folder-ul proiectului de pe GitGub in aceeasi 
+locatie cu codul sursa si acest fisier README.
+- SURSE EXTERNE: LISTA cu sursele externe folosite este inclusa in Documentation_RO.pdf in BIBLIOGRAFIE. 
+- PREZENTAREA: Presentation_RO.pdf este prezentarea aplicatiei Lfo Programming, are 5 pagini si este inclusa in folder-ul 
+proiectului de pe GitGub, in aceeasi locatie cu codul sursa si acest fisier README.
 
 ======================================================================
 ======================================================================

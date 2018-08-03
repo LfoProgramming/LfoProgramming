@@ -1,4 +1,4 @@
-Welcome to  LFO!
+Welcome to Lfo!
 
 1. Getting started
 
@@ -6,10 +6,10 @@ Files in LFO Creator have the " .lfop " extension.
 
 Ctrl + H = Help
 
-Ctrl + C = Compile
+Ctrl + C = Build and Run
+ 
+2. Functions
 
-Ctrl + R = Run
 
-Ctrl + S = Save
 
-Shift + R = Compile and Run
+Please enter: ./lfointerpretor < your file name > . when you build (after you save) Thank You! ( make sure that you have lfointerpretor installed )
