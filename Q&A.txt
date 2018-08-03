@@ -2,8 +2,12 @@ This is a set of Possible Questions:
 
 ------------------------------------|
 
-Q:
-A: 
+Q: How Do I Compile?
+A: Write ./lfointerpretorc < application name >.lfop in terminal.
 
 ------------------------------------|
 
+Q: How Do I Make a file?
+A: Go To File > New File and enter a name. Then click on save.
+
+------------------------------------|
